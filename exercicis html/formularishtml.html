@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>FORMULARIS</title>
+    </head>
+    <body>
+        <form><!-- a veguades en el estalviarem, cuan noceccitem enviar tot el form  method="" action="" get o post i a on va-->
+            Nom: <input type="text" name="nom" /><!--type obligatori i name tambe sempre per identificar(respectar maj i min i fer noms estandars)--><br/>
+            Provincia: <input type="text" name="provincia" value="Girona"/><br/>
+            Email: <input type="email" name="email" placeholder="exemple@correu.cat" size="40"/><br/>
+            Edat: <input type="number" name="edat" size="5" maxlength="3" /><br/>
+            Password: <input type="password" name="pass" size="15" maxlength="10"/><br/>
+            Sexe: <input type="radio" name="sexe" value="home"/>Home <input type="radio" name="sexe" value="dona"/>Dona<br/> 
+            <input type="checkbox" name="casella" checked="yes" value="1"/> He llegit i accepto l'atracu del gobern<br/>
+            <input type="submit" name="submit" value="Enviar"/> <input type="button" name="boto" value="Destrueix(el mon)"/><br/>
+
+            Comentaris:<br/>
+            <textarea name="comentaris" cols="80" rows="5" placeholder="Si tens problemes truca a la teva mare primer..."></textarea><br/>
+            <input type="button" name="boto2" value="Enviar"/><br/>
+            Torn: 
+            <select name="seleccio">
+                <option>Escull un Torn</option>
+                <option>Mati</option><!--pots posar un value si no vols rebre la informacio directament-->
+                <option>Tarda</option>
+                <option>Mai</option>
+            </select> <br/>
+            Quin dia vols morir?<br/>
+            <select name="dia" size="5">
+                <option>Dilluns</option>
+                <option>Dimarts</option>
+                <option>Dimecres</option>
+                <option>Dijous</option>
+                <option>Divendres</option>
+            </select>
+            
+
+
+
+        </form>
+    </body>
+</html>
