@@ -1,0 +1,24 @@
+p{
+    color: violet;
+}
+b{
+    color: steelblue;
+}
+h1 b{
+    color: tomato;
+}
+.sinopsi{
+    color: brown;
+}
+p.sinopsi{
+    color: chartreuse;
+}
+#plus{
+    color: darkblue;
+}
+/* les definicions donen prioritat, h1 b te pes 2 guanya a pes 1 com b*/
+/* body h1 es una trampa perque tots els h1 estan al body pero aixi dones mes prioritat, cutre*/
+/* les etiquetes son molt importants i preveleixen sobre etiquetes, es poden posar en diferentes tipus de etiquetes*/
+/*p.sinopsi especifica mes (amb espai)*/
+/*si te espai significa que es refereix a els sinopsi que estiguin dins de p*/
+/*els id identfica una etiqueta i nomes en pot haver 1 te un pes brutal super especific, no cal ferlos servir pero lavantage es cuan hem de programar, pot haverni mes en altres pagines per lo qual tambe es pot utilitzar el p#tal o p #tal*/
