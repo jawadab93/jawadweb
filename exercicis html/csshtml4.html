@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        /* els empats en css no son bons, es pot posar mes de una classe en una etiqueta separadas per un espai*/
+        /* .titolPrincipal{
+            color: blue;
+        }
+        .destacat{
+            font-size: 36px;
+            color: red;
+        }
+        #resum{
+            color: orange;
+        }*/
+        b {
+            color: red;
+        }
+
+        p b {
+            color: blue;
+        }
+
+        p>b {
+            color: green;
+            /*child, nomes es posen verd els decendents directes, nomes els fills de p, no els nets etc*/
+        }
+
+        h2+p {
+            color: yellow;
+            /*el p que be just despres de h2 fes-lo groc en el mateix nivell*/
+        }
+
+        h2~p {
+            color: violet;
+            /* tots els p que vinguin acontinuacio de h2, al mateix nivell no importa si no hi son seguits*/
+        }
+        p::first-line{
+            color: navy;
+        }
+        p.destacat::first-line{
+            color: red;
+        }
+        p::first-letter{
+            font-size: 28px;
+        }
+        li:first-child{
+            color: blue;/*no cal especificar el parent, significa els li que son frst child, si hi ha alguna cosa avans ja no es first child*/
+        }
+        p:first-child{
+            color: blue;
+        }li:nth-child(10){/*els childs 10 no important els childs del tipus anteriior que siguin*/
+            color: red;
+        }
+        li:nth-child(3N+0){/*cada 3 comensant per 0*/
+            color: blue;
+        }
+        li:nth-child(even/*odd*/){
+            color: blueviolet;
+        }
+        a{
+            text-decoration: none;
+            /*text-decoration: line-through;*/
+        }
+        a:hover{
+            color: red;/*cuan pases per sobre canvia de color*/
+        }
+        a:link{
+            color: rgb(0, 255, 64);
+            
+        }
+        a:active{
+            color: yellow;
+        }
+    </style>
+    <title>CSS 2</title>
+</head>
+
+<body>
+    <h1><b>Neque porro quisquam est qui dolorem </b><i>ipsum quia dolor sit amet, consectetur,</i>adipisci velit...</h1>
+    <h2><b>here is no one who loves pain itself,</b><i>who seeks after it and wants to have it, </i>simply because it is
+        pain..."</h2>
+    <p class="destacat"><b>Lorem ipsum dolor sit amet,</b> consectetur adipiscing elit. Suspendisse sollicitudin, dui eu tempor lacinia,
+        massa justo interdum elit, vel sollicitudin nulla eros ut diam. Nunc nec varius erat. Sed gravida ultrices est
+        in convallis. <a href="www.google.com" target="_blank">Aliquam eu<b> urna dui.</b></a> Integer porttitor odio
+        eget quam varius hendrerit. Pellentesque vitae nisi
+        vel est posuere pulvinar. Vestibulum ultrices condimentum tincidunt. Sed gravida scelerisque elit sit amet
+        volutpat. Etiam vitae imperdiet mauris. Praesent porttitor massa mauris, sit amet fringilla velit pellentesque
+        ut.<i>Aliquam vitae aliquam odio.</i></p>
+    <p><b>Nulla ullamcorper turpis nec consequat rutrum.</b> In ipsum quam, rhoncus nec pellentesque vitae, hendrerit id
+        sapien. Donec pharetra fringilla purus. Duis consectetur urna arcu, sed molestie metus dapibus eget. Fusce leo
+        risus, mollis non ultrices in, tempus a nisl. Etiam vulputate turpis massa, et imperdiet ipsum eleifend id.<i>
+            Nam vitae faucibus risus.</i></p>
+    <p>
+        <a href="www.google.com" target="_blank">Visita google</a>
+        <a href="www.yahoo.com">Visita yahoo</a>
+    </p>
+    <ul>
+        <li>pata</li>
+        <li>peta</li>
+        <li>pita</li>
+        <li>pota</li>
+        <li class="titolPrincipal">pilota</li>
+        <li>pata</li>
+        <li>peta</li>
+        <li>pita</li>
+        <li>pota</li>
+        <li class="titolPrincipal">pilota</li>
+        <li>pata</li>
+        <li>peta</li>
+        <li>pita</li>
+        <li>pota</li>
+        <li class="titolPrincipal">pilota</li>
+    </ul>
+    <ol>
+        <p>mollis non ultrices in, tempus a nisl. Etiam vulp</p>
+        <li>gat</li>
+        <li>gos</li>
+        <li>ocell</li>
+        <li>conill</li>
+        <li>arbre</li>
+        <li>gat</li>
+        <li>gos</li>
+        <li>ocell</li>
+        <li>conill</li>
+        <li>arbre</li>
+        <li>gat</li>
+        <li>gos</li>
+        <li>ocell</li>
+        <li>conill</li>
+        <li>arbre</li>
+    </ol>
+    <p>Morbi leo leo, volutpat eget placerat ac, mollis eu neque. Praesent eget facilisis ipsum. Sed a ipsum odio.
+        Aliquam erat volutpat. Sed non cursus elit. Pellentesque luctus quam ac faucibus fermentum. Suspendisse
+        tincidunt tellus metus, ut porta nisi bibendum nec. Pellentesque a tellus vitae sapien dignissim blandit. Fusce
+        ut lorem fringilla, faucibus odio ac, vulputate turpis. Duis sit amet ante id dolor scelerisque tristique at id
+        urna.</p>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        .capsalera{
+            text-align: left;
+            size: 10px;
+            
+        }
+        .totals{
+            border: rgb(189, 5, 5);
+            border-width: 10px;
+            font-weight: bold;
+        }
+        h1{
+            text-decoration: underline;
+        }
+    </style>
+    <title>Practica HTML 1</title>
+</head>
+
+<body>
+    <h1>COMANDA</h1>
+    <p>
+        <table border="0">
+            <tr class="capsalera">
+                <th colspan="1">CLIENT</th>
+                <th colspan="1">PROVEIDOR</th>
+                
+            </tr>
+            <tr>
+                <td><input type="text" name="nomf" placeholder="Nom fiscal" /></td>
+                <td>Formatges Sala S.L.</td>
+                
+            </tr>
+            <tr>
+                <td><input type="text" name="adresaf" placeholder="Adr. fiscal" /></td>
+                <td>Av les corts 34</td>
+                
+            </tr>
+            <tr>
+                <td><input type="text" name="poblacio" placeholder="Població" /><input type="text" name="cp" placeholder="C.P." /></td>
+                <td> 17005 Girona</td>
+                
+            </tr>
+            <tr>
+                <td><input type="text" name="nif"  placeholder="NIF"/></td>
+                <td> 89898989F</td>
+                
+            </tr>
+        </table>
+    </p>
+    <table border="1"  cellspacing=0 cellpadding=2 >
+        <tr>
+            <th>QUANTITAT</th>
+            <th>PRODUCTE</th>
+            <th>PREU UNIT.</th>
+            <th>PREU TOTAL</th>
+        </tr>
+        <tr>
+            <td><input type="number" name="qProducte1" size="5" /></td>
+            <td><select name="producte1">
+                    <option>Escull un producte</option>
+                    <option>Mozzarella</option>
+                    <option>Camembert</option>
+                    <option>Curat</option>
+                    <option>Semi-Curat</option>
+                    <option>Cabra</option>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="qProducte2" size="5" /></td>
+            <td><select name="producte2">
+                    <option>Escull un producte</option>
+                    <option>Mozzarella</option>
+                    <option>Camembert</option>
+                    <option>Curat</option>
+                    <option>Semi-Curat</option>
+                    <option>Cabra</option>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="qProducte3" size="5" /></td>
+            <td><select name="producte3">
+                    <option>Escull un producte</option>
+                    <option>Mozzarella</option>
+                    <option>Camembert</option>
+                    <option>Curat</option>
+                    <option>Semi-Curat</option>
+                    <option>Cabra</option>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="qProducte4" size="5" /></td>
+            <td><select name="producte4">
+                    <option>Escull un producte</option>
+                    <option>Mozzarella</option>
+                    <option>Camembert</option>
+                    <option>Curat</option>
+                    <option>Semi-Curat</option>
+                    <option>Cabra</option>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="number" name="qProducte5" size="5" /></td>
+            <td><select name="producte5">
+                    <option>Escull un producte</option>
+                    <option>Mozzarella</option>
+                    <option>Camembert</option>
+                    <option>Curat</option>
+                    <option>Semi-Curat</option>
+                    <option>Cabra</option>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="totals">
+            <td colspan="3">SUBTOTAL</td>
+            <td></td>
+        </tr>
+        <tr class="totals">
+            <td colspan="3">IVA 21%</td>
+            <td></td>
+        </tr>
+        <tr class="totals">
+            <td colspan="3">TOTAL</td>
+            <td></td>
+        </tr>
+
+    </table>
+    <p>
+        Comentaris:<br />
+        <textarea name="comentaris" cols="80" rows="5"></textarea><br />
+        <input type="checkbox" name="privacitat" value="1" /> He llegit i accepto<a href="http://www.google.com"
+            target="_blank"> la politica de privacitat</a>
+        <ul>
+            <li>Les devolucions tenen un limit de 30 dies.</li>
+            <li>No s'acceptaran devolucions amb despafectes.</li>
+            <li>La factura es obligatoria per la devolució.</li>
+            <li>El pagament s'haura de realitzar com a maxim en una semana despres de la comanda.</li>
+            <li>per cualsevol canvi inmediat, sacceptara si encara no s'ha processat la comanda.</li>
+
+        </ul>
+    </p>
+</body>
+
+</html>
