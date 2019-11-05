@@ -1,0 +1,61 @@
+#capsalera{
+    width: 100%;
+    height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+ul{
+    width: 350px;
+    height: 200px;
+    position: relative;
+    float: left;
+    background-color: yellow;
+    
+}
+#cos-pagina{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    float: left;
+    background-color: red;
+    
+}
+#side{
+    width:300px;
+    height: 400px;
+    background-color:#32A4E7;
+    border-radius: 5px;
+    
+    
+}
+#last{
+    width: 100%;
+    height: 400px;
+    background-color: violet;
+    margin: 10px;
+    
+    
+    
+}
+li{
+    background-color: #F1F1F1;
+    margin: 2px;
+    list-style-type: none;
+    text-align: left;
+    margin-left: auto;
+}
+a:link {
+    text-decoration: underline;
+    color: black;
+  }
+  
+
+  
+  a:hover {
+    text-decoration: none;
+    color: black;
+    
+  }
+  

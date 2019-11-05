@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" ; content="wide=1px" ; initial-scale="1.0">
+    <style>
+        #foto {
+            width: 40%;
+            height: 300px;
+            position: relative;
+            float: left;
+            background-color: blue;
+        }
+
+        #desc1 {
+            width: 60%;
+            height: 300px;
+            background-color: red;
+        }
+
+        #desc2 {
+            width: 100%;
+            height: 300px;
+            display: none;
+            background-color: green;
+        }
+
+        @media only screen and (max-width: 992px) {
+            #desc1 {
+                display: none;
+            }
+
+            #desc2 {
+
+                display: block;
+            }
+
+            #foto {
+
+                float: none;
+            }}
+    </style>
+    <title>responsive2</title>
+</head>
+
+<body>
+    <h1>BONES TARDES</h1>
+    <div id="foto"><img src="gat.jpg" alt="un gat" /></div>
+    <div id="desc1">Mauris gravida, turpis mollis rhoncus viverra, nibh ex dignissim nunc, vel sollicitudin turpis metus
+        sit amet tortor. Morbi ac nulla a risus rutrum consectetur vel id augue. Cras lobortis, eros a pellentesque
+        volutpat, ex justo mollis velit, in placerat lorem tortor varius arcu. Curabitur mollis facilisis neque
+        tristique gravida. Ut gravida velit sodales scelerisque dictum. Vivamus porta enim et dapibus congue. Nunc sed
+        erat id lorem euismod imperdiet. Quisque vitae quam erat. Pellentesque non magna et mi molestie interdum. In hac
+        habitasse platea dictumst.
+
+        Ut massa orci, euismod vel elementum vitae, ullamcorper a purus. Nam laoreet lacus nec tortor egestas placerat.
+        Maecenas pulvinar et tortor eu mattis. Nulla ut feugiat felis. Praesent porta vehicula orci et blandit. In ut
+        condimentum est. Pellentesque semper fermentum nulla nec cursus. Praesent fringilla hendrerit nulla, sed
+        dignissim massa pulvinar at. Fusce consectetur, ligula eget luctus porta, eros justo varius neque, quis
+        consequat enim orci vel lectus. Fusce condimentum ante mi, egestas euismod ante consequat vel. In hac habitasse
+        platea dictumst. Aenean id leo ac diam sollicitudin commodo et in ante. Nullam vitae efficitur ligula. <button type="button" onclick="alert('Hello World!')">Click Me!</button></div>
+    <div id="desc2">Mauris gravida, turpis mollis rhoncus viverra, nibh ex dignissim nunc, vel sollicitudin turpis metus
+        sit amet tortor. Morbi ac nulla a risus rutrum consectetur vel id augue. Cras lobortis, eros a pellentesque
+        volutpat, ex justo mollis velit, in placerat lorem tortor varius arcu. <button type="button" onclick="alert('Hello World!')">Click Me!</button></div>
+       
+</body>
+
+</html>
